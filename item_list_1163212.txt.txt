@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- Name Label -->
+
+    <!-- Known for Label -->
+
+    <!-- Divider Line -->
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: " />
+
+        <TextView
+            android:id="@+id/nameValue"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="Meghalaya" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:orientation="horizontal"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="35dp">
+
+        <TextView
+            android:id="@+id/knownForLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Known for: " />
+
+        <TextView
+            android:id="@+id/knownForValue"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="20 years" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearLayout"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

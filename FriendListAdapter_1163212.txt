@@ -1,0 +1,42 @@
+package com.n_brarath.assignment5;
+
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
+
+public class FriendListAdapter extends RecyclerView.Adapter<FriendViewHolder>{
+    private Context context; // Variable for Context
+    private List<Friend> friendList; // Variable for list of Friends
+
+    // Constructor to initialize Context and friend list
+    public FriendListAdapter(Context context, List<Friend> friendList) {
+        this.context = context;
+        this.friendList = friendList;
+    }
+
+    public FriendListAdapter(@NonNull View itemView) {
+        super();
+    }
+
+    @NonNull
+    @Override
+    public FriendViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return null;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull FriendViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
+}
